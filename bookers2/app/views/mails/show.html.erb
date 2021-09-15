@@ -1,0 +1,13 @@
+<% if flash[:notice] %>
+  <div class="flash">
+    <p id="notice"><%= flash[:notice] %></p>
+  </div>
+<% end %>
+
+<h4>内容は以下の通りです</h4>
+
+<h4>[タイトル]：</h4>
+<%= @mail.title %>
+
+<h4>[本文]：</h4>
+<%= @mail.content %>
